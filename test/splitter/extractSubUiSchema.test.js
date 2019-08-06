@@ -76,7 +76,7 @@ test("extract nested", () => {
 
   expect(
     extractSubUiSchema(
-      ["general.firstName"],
+      ["general$firstName"],
       {},
       origUiSchema,
       uiSchema,

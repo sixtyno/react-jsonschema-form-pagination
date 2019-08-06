@@ -1,5 +1,5 @@
 export const asNavField = (field, navConfs, uiSchema) => {
-  const separatorIndex = field.indexOf(".");
+  const separatorIndex = field.indexOf("$");
   if (separatorIndex === -1) {
     uiSchema[field] = {
       navConfs,

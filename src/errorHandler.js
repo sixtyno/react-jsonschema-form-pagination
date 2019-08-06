@@ -6,7 +6,7 @@ export function fetchField({ property, argument }) {
       ? property.substring(9)
       : property.substring(1);
     let nextArrSep = fullField.indexOf("[");
-    let nextFieldSep = fullField.indexOf(".");
+    let nextFieldSep = fullField.indexOf("$");
     let nextSeparator =
       nextArrSep != -1 && nextFieldSep != -1
         ? Math.min(nextArrSep, nextFieldSep)

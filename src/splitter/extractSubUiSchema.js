@@ -1,7 +1,7 @@
 import { toHiddenUiSchema } from "./util";
 
 const restoreField = (field, uiSchema, origUiSchema, schema) => {
-  const separatorIndex = field.indexOf(".");
+  const separatorIndex = field.indexOf("$");
   if (separatorIndex === -1) {
     uiSchema[field] = origUiSchema[field];
   } else {
